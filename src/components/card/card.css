@@ -41,7 +41,7 @@
   margin: 0 0;
 }
 
-.button {
+.buttonLike {
   position: relative;
   top: -363px;
   left: 270px;
@@ -60,3 +60,4 @@
   font-size: 24px;
   color: #ff0000;
 }
+

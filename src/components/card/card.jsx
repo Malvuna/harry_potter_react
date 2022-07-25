@@ -1,5 +1,6 @@
+import { useState } from "react";
+
 export function Card({ image, name, actor, gender, house, wand, alive }) {
-  
   function addLike() {
     localStorage.setItem(name, "like");
   }
@@ -16,6 +17,24 @@ export function Card({ image, name, actor, gender, house, wand, alive }) {
       addLike();
     }
   }
+
+  const [isLike, setIsLike] = useState(true);
+
+  let like = (
+    <svg
+      width="24"
+      height="23"
+      viewBox="0 0 24 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M11.9997 1.97108C18.6567 -4.87192 35.3007 7.10258 11.9997 22.5001C-11.3013 7.10408 5.34267 -4.87192 11.9997 1.97108Z"
+        fill="#DC3545"
+      />
+    </svg>
+  );
 
   let empty = (
     <svg
@@ -44,11 +63,9 @@ export function Card({ image, name, actor, gender, house, wand, alive }) {
       <p className="description">House: {house}</p>
       <p className="description">Wand core: {wand.core} </p>
       <p className="description">Alive: {alive == true ? "yes" : "no"} </p>
-      <button className="button" onClick={searchLike}>
-        {empty}
+      <button className="buttonLike" onClick={() => {setIsLike(!isLike); searchLike()}}>
+        {isLike ? empty : like}
       </button>
     </div>
   );
 }
-
-//  d="M11.9997 1.97108C18.6567 -4.87192 35.3007 7.10258 11.9997 22.5001C-11.3013 7.10408 5.34267 -4.87192 11.9997 1.97108Z" fill="#DC3545"/>

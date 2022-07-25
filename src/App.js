@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Header } from "./components/header/header.jsx";
 import { Filters } from "./components/filters/filters.jsx";
 import { Main } from "./components/main/main.jsx";
+import { Liked } from "./components/header/liked.jsx";
 
 function App() {
   const [textValue, setTextValue] = useState("");
@@ -19,6 +20,8 @@ function App() {
 
   return (
     <>
+      <Liked />
+      <div className="hr"></div>
       <Header />
       <Filters
         name={textValue}
