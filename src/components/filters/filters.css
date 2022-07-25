@@ -1,0 +1,67 @@
+.conteiner {
+  max-width: 688px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.text_label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #818182;
+}
+
+.form_card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#fname {
+  width: 452px;
+  height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.input {
+  box-sizing: border-box;
+  padding-left: 17px;
+}
+
+::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #abb5be;
+}
+
+.styled-select select {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 216px;
+  height: 38px;
+  padding-left: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.styled-select {
+  width: 216px;
+  height: 38px;
+  overflow: hidden;
+  background: url(./arrow.png) no-repeat right #ffffff;
+  background-position: 90% 50%;
+}
+
+#school {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #abb5be;
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Header } from "./components/header/header.jsx";
+import { Filters } from "./components/filters/filters.jsx";
+import { Main } from "./components/main/main.jsx";
 
 function App() {
+  const [textValue, setTextValue] = useState("");
+
+  function onSearch({ currentTarget }) {
+    setTextValue(currentTarget.value);
+  }
+
+  const [selectValue, setSelectValue] = useState("");
+
+  function onSearchSelect({ currentTarget }) {
+    setSelectValue(currentTarget.value);
+  }
+  console.log(selectValue);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Filters
+        name={textValue}
+        onNameChange={onSearch}
+        onSchoolChange={onSearchSelect}
+      />
+      <Main name={textValue} school={selectValue} />
+    </>
   );
 }
 

@@ -1,0 +1,15 @@
+.box {
+    width: 688px;
+    border: 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 334px);
+    grid-gap: 20px 20px;
+    margin: 0 auto;
+  }
+
+  .hr {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 40px;
+  }
+  
