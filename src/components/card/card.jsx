@@ -3,11 +3,13 @@ import like from "./like.svg";
 import empty from "./empty.svg";
 
 export function Card({ image, name, actor, gender, house, wand, alive }) {
+
+
   function searchLike() {
     if (localStorage.getItem(name) === "like") {
       localStorage.removeItem(name);
     } else {
-      localStorage.setItem(name, "like");
+      localStorage.setItem(name, "like")
     }
   }
 

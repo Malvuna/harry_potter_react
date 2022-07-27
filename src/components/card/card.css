@@ -1,6 +1,6 @@
 .card {
   width: 334px;
-  height: 409px;
+  height: 509px;
   background-color: #ffffff;
   border: 1px solid #dee2e6;
   margin-bottom: 20px;
@@ -8,7 +8,7 @@
 
 .card_img {
   width: 334px;
-  height: 192px;
+  height: 292px;
   display: block;
   margin-bottom: 24px;
   overflow: hidden;
@@ -43,7 +43,7 @@
 
 .buttonLike {
   position: relative;
-  top: -363px;
+  top: -463px;
   left: 270px;
 
   width: 48px;

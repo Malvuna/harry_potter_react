@@ -3,7 +3,14 @@
 @import url("./components/main/main.css");
 @import url("./components/card/card.css");
 
-
 html {
-    background: #f5f5f5;
-  }
+  background: #f5f5f5;
+}
+
+:link {
+  text-decoration: none;
+}
+
+:visited {
+  color: #3f444a;
+}
