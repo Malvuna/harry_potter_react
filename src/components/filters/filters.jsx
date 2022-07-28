@@ -1,4 +1,4 @@
-export function Filters({ name, onNameChange, onSchoolChange }) {
+export function Filters({ name, onSearch, onSearchSelect }) {
   return (
     <div className="conteiner">
       <form className="text_label" method="post">
@@ -12,7 +12,7 @@ export function Filters({ name, onNameChange, onSchoolChange }) {
               name="fname"
               placeholder="Enter name"
               value={name}
-              onChange={onNameChange}
+              onChange={onSearch}
             />
             <br />
           </div>
@@ -25,7 +25,7 @@ export function Filters({ name, onNameChange, onSchoolChange }) {
               <select
                 id="school"
                 name="school"
-                onChange={onSchoolChange}
+                onChange={onSearchSelect}
                 defaultValue="">
                 <option value="" disabled hidden>
                   Choose school

@@ -1,34 +1,29 @@
-import { data } from "../card/characters.js";
-import { Card } from "../card/card.jsx";
 import { Link } from "react-router-dom";
-import Fuse from "fuse.js";
-import like from "../card/like.svg";
+import likese from "../card/likese.svg";
+
 import { Header } from "../header/header";
 import { Filters } from "../filters/filters";
+import { Card } from "../card/card.jsx";
 
-export function Main({ name, school, textValue, onSearch, onSearchSelect }) {
-  const fuse = new Fuse(data, {
-    keys: ["name", "actor", "house"],
-    threshold: 0.2,
-  });
-
-  const filterName = name ? fuse.search(name).map((elem) => elem.item) : data;
-
-  const filterSchool = filterName.filter((elem) => elem.house.includes(school));
-  
+export function Main({
+  filterSchool,
+  onSearch,
+  onSearchSelect,
+  likeName,
+  onLike,
+  onDisLike,
+}) {
   return (
     <main className="main">
       <Header />
-      <Filters
-        name={textValue}
-        onNameChange={onSearch}
-        onSchoolChange={onSearchSelect}
-      />
+      <Filters onSearch={onSearch} onSearchSelect={onSearchSelect} />
       <div className="hr"></div>
+
       <button className="buttonShowLiked">
-        <img className="imgButtom" src={like} />
+        <img className="imgButtom" src={likese} />
         <Link to="/favorite"> Show Liked </Link>
       </button>
+
       <div className="box">
         {filterSchool.map((elem) => (
           <Card
@@ -40,6 +35,9 @@ export function Main({ name, school, textValue, onSearch, onSearchSelect }) {
             wand={elem.wand}
             alive={elem.alive}
             key={elem.name}
+            liked={likeName.includes(elem.name)}
+            onLike={onLike}
+            onDisLike={onDisLike}
           />
         ))}
       </div>

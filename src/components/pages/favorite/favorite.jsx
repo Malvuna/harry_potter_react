@@ -1,12 +1,10 @@
-import { data } from "../../card/characters.js";
 import { Liked } from "../../header/liked.jsx";
+
 import { Card } from "../../card/card.jsx";
 
-export function Favorite() {
-
-  
-  const filterFavoritArr = data.filter(
-    (elem) => localStorage.getItem(elem.name) === "like",
+export function Favorite({ filterSchool, likeName, onLike, onDisLike }) {
+  const filterFavoritArr = filterSchool.filter((elem) =>
+    likeName.includes(elem.name),
   );
 
   return (
@@ -24,6 +22,9 @@ export function Favorite() {
             wand={elem.wand}
             alive={elem.alive}
             key={elem.name}
+            liked={likeName.includes(elem.name)}
+            onLike={onLike}
+            onDisLike={onDisLike}
           />
         ))}
       </div>

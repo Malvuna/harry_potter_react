@@ -1,22 +1,18 @@
-import { useState } from "react";
-import like from "./like.svg";
+import likese from "./likese.svg";
 import empty from "./empty.svg";
 
-export function Card({ image, name, actor, gender, house, wand, alive }) {
-
-
-  function searchLike() {
-    if (localStorage.getItem(name) === "like") {
-      localStorage.removeItem(name);
-    } else {
-      localStorage.setItem(name, "like")
-    }
-  }
-
-  const savedLike = localStorage.getItem(name) === "like";
-
-  const [isLike, setIsLike] = useState(savedLike);
-
+export function Card({
+  image,
+  name,
+  actor,
+  gender,
+  house,
+  wand,
+  alive,
+  liked,
+  onLike,
+  onDisLike,
+}) {
   return (
     <div className="card">
       <div className="card_img">
@@ -30,11 +26,8 @@ export function Card({ image, name, actor, gender, house, wand, alive }) {
       <p className="description">Alive: {alive == true ? "yes" : "no"} </p>
       <button
         className="buttonLike"
-        onClick={() => {
-          setIsLike(!isLike);
-          searchLike();
-        }}>
-        <img src={isLike ? like : empty}></img>
+        onClick={() => (liked ? onDisLike(name) : onLike(name))}>
+        <img src={liked ? likese : empty}></img>
       </button>
     </div>
   );
