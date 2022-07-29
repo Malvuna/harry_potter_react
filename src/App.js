@@ -12,7 +12,6 @@ const addLike = JSON.parse(localStorage.getItem("liked")) ?? [];
 
 export function App() {
   const [likeName, setlikeName] = useState(addLike);
-  console.log(likeName);
   localStorage.setItem("liked", JSON.stringify(likeName));
 
   const [textValue, setTextValue] = useState("");
@@ -51,7 +50,7 @@ export function App() {
 
   return (
       <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename="/harry_potter_react">
           <Routes>
             <Route
               path="/"
