@@ -15,7 +15,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Daniel Radcliffe",
     alive: true,
-    image: "http://24api.ru/web/img/hp/harry.jpg",
+    image: "https://24api.ru/web/img/hp/harry.jpg",
   },
   {
     name: "Hermione Granger",
