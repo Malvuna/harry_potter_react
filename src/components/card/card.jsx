@@ -24,11 +24,10 @@ export function Card({
       <p className="description">House: {house}</p>
       <p className="description">Wand core: {wand.core} </p>
       <p className="description">Alive: {alive == true ? "yes" : "no"} </p>
-      <button
-        className="buttonLike"
-        onClick={() => (liked ? onDisLike(name) : onLike(name))}>
+      <div className="divLike"> <button className="buttonLike" onClick={() => (liked ? onDisLike(name) : onLike(name))}>
         <img src={liked ? likese : empty}></img>
       </button>
+      </div>
     </div>
   );
 }
