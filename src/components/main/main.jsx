@@ -12,6 +12,7 @@ export function Main({
   likeName,
   onLike,
   onDisLike,
+  clearValue,
 }) {
   return (
     <main className="main">
@@ -19,7 +20,7 @@ export function Main({
       <Filters onSearch={onSearch} onSearchSelect={onSearchSelect} />
       <div className="hr"></div>
 
-      <button className="buttonShowLiked">
+      <button className="buttonShowLiked" onClick={() => clearValue()}>
         <img className="imgButtom" src={likese} />
         <Link to="/favorite"> Show Liked </Link>
       </button>

@@ -1,6 +1,6 @@
 export function Filters({ name, onSearch, onSearchSelect }) {
   return (
-    <div className="conteiner">
+    <div className="container">
       <form className="text_label" method="post">
         <div className="form_card">
           <div className="form_name">

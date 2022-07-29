@@ -24,6 +24,10 @@ export function App() {
     setSelectValue(currentTarget.value);
   }
 
+  function clearValue (){
+    setSelectValue("")
+  }
+
   function like(name) {
     const newlikeName = [...likeName];
     newlikeName.push(name);
@@ -62,6 +66,7 @@ export function App() {
                   onLike={like}
                   onDisLike={disLike}
                   likeName={likeName}
+                  clearValue={clearValue}
                 />
               }
             />
