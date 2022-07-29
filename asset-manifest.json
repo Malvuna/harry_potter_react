@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/harry_potter_react/static/css/main.cfe0e8e9.css",
-    "main.js": "/harry_potter_react/static/js/main.5c095fe1.js",
+    "main.css": "/harry_potter_react/static/css/main.94bed6c3.css",
+    "main.js": "/harry_potter_react/static/js/main.a0a0ff7a.js",
     "static/media/empty.svg": "/harry_potter_react/static/media/empty.cfb3374a8739fefc1f544bf034a5b662.svg",
     "index.html": "/harry_potter_react/index.html",
     "static/media/likese.svg": "/harry_potter_react/static/media/likese.780ebc7d4c10690fda53cf4761560d8c.svg",
-    "main.cfe0e8e9.css.map": "/harry_potter_react/static/css/main.cfe0e8e9.css.map",
-    "main.5c095fe1.js.map": "/harry_potter_react/static/js/main.5c095fe1.js.map"
+    "main.94bed6c3.css.map": "/harry_potter_react/static/css/main.94bed6c3.css.map",
+    "main.a0a0ff7a.js.map": "/harry_potter_react/static/js/main.a0a0ff7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfe0e8e9.css",
-    "static/js/main.5c095fe1.js"
+    "static/css/main.94bed6c3.css",
+    "static/js/main.a0a0ff7a.js"
   ]
 }
