@@ -69,7 +69,8 @@ export const data = [
     hogwartsStaff: false,
     actor: "Tom Felton",
     alive: true,
-    image: "http://24api.ru/web/img/hp/draco.jpg",
+    image: "draco.jpg",
+    
   },
   {
     name: "Minerva McGonagall",
@@ -87,7 +88,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "Dame Maggie Smith",
     alive: true,
-    image: "http://24api.ru/web/img/hp/mcgonagall.jpg",
+    image: "mcgonagall.jpg",
   },
   {
     name: "Cedric Diggory",
@@ -105,7 +106,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Robert Pattinson",
     alive: false,
-    image: "http://24api.ru/web/img/hp/cedric.png",
+    image: "cedric.png",
   },
   {
     name: "Cho Chang",
@@ -123,7 +124,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Katie Leung",
     alive: true,
-    image: "http://24api.ru/web/img/hp/cho.jpg",
+    image: "cho.jpg",
   },
   {
     name: "Severus Snape",
@@ -141,7 +142,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "Alan Rickman",
     alive: false,
-    image: "http://24api.ru/web/img/hp/snape.jpg",
+    image: "snape.jpg",
   },
   {
     name: "Rubeus Hagrid",
@@ -159,7 +160,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "Robbie Coltrane",
     alive: true,
-    image: "http://24api.ru/web/img/hp/hagrid.png",
+    image: "hagrid.png",
   },
   {
     name: "Neville Longbottom",
@@ -177,7 +178,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Matthew Lewis",
     alive: true,
-    image: "http://24api.ru/web/img/hp/neville.jpg",
+    image: "neville.jpg",
   },
   {
     name: "Luna Lovegood",
@@ -195,7 +196,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Evanna Lynch",
     alive: true,
-    image: "http://24api.ru/web/img/hp/luna.jpg",
+    image: "luna.jpg",
   },
   {
     name: "Ginny Weasley",
@@ -213,7 +214,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Bonnie Wright",
     alive: true,
-    image: "http://24api.ru/web/img/hp/ginny.jpg",
+    image: "ginny.jpg",
   },
   {
     name: "Sirius Black",
@@ -231,7 +232,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Gary Oldman",
     alive: false,
-    image: "http://24api.ru/web/img/hp/sirius.JPG",
+    image: "sirius.JPG",
   },
   {
     name: "Remus Lupin",
@@ -249,7 +250,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "David Thewlis",
     alive: false,
-    image: "http://24api.ru/web/img/hp/lupin.jpg",
+    image: "lupin.jpg",
   },
   {
     name: "Arthur Weasley",
@@ -267,7 +268,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Mark Williams",
     alive: true,
-    image: "http://24api.ru/web/img/hp/arthur.jpg",
+    image: "arthur.jpg",
   },
   {
     name: "Bellatrix Lestrange",
@@ -285,7 +286,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Helena Bonham Carter",
     alive: false,
-    image: "http://24api.ru/web/img/hp/bellatrix.jpg",
+    image: "bellatrix.jpg",
   },
   {
     name: "Lord Voldemort",
@@ -303,7 +304,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Ralph Fiennes",
     alive: false,
-    image: "http://24api.ru/web/img/hp/voldemort.jpg",
+    image: "voldemort.jpg",
   },
   {
     name: "Horace Slughorn",
@@ -321,7 +322,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "Jim Broadbent",
     alive: true,
-    image: "http://24api.ru/web/img/hp/slughorn.JPG",
+    image: "slughorn.JPG",
   },
   {
     name: "Kingsley Shacklebolt",
@@ -339,7 +340,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "George Harris",
     alive: true,
-    image: "http://24api.ru/web/img/hp/kingsley.jpg",
+    image: "kingsley.jpg",
   },
   {
     name: "Dolores Umbridge",
@@ -357,7 +358,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "Imelda Staunton",
     alive: true,
-    image: "http://24api.ru/web/img/hp/umbridge.jpg",
+    image: "umbridge.jpg",
   },
   {
     name: "Lucius Malfoy",
@@ -375,7 +376,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Jason Isaacs",
     alive: true,
-    image: "http://24api.ru/web/img/hp/lucius.jpg",
+    image: "lucius.jpg",
   },
   {
     name: "Vincent Crabbe",
@@ -393,7 +394,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Jamie Waylett",
     alive: false,
-    image: "http://24api.ru/web/img/hp/crabbe.jpg",
+    image: "crabbe.jpg",
   },
   {
     name: "Gregory Goyle",
@@ -411,7 +412,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Josh Herdman",
     alive: true,
-    image: "http://24api.ru/web/img/hp/goyle.jpg",
+    image: "goyle.jpg",
   },
   {
     name: "Mrs Norris",
@@ -429,7 +430,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "Maxime, Alanis and Tommy the cats",
     alive: true,
-    image: "http://24api.ru/web/img/hp/norris.JPG",
+    image: "norris.JPG",
   },
   {
     name: "Argus Filch",
@@ -447,7 +448,7 @@ export const data = [
     hogwartsStaff: true,
     actor: "David Bradley",
     alive: true,
-    image: "http://24api.ru/web/img/hp/filch.jpg",
+    image: "filch.jpg",
   },
 ];
 

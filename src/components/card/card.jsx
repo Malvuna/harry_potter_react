@@ -16,7 +16,7 @@ export function Card({
   return (
     <div className="card">
       <div className="card_img">
-        <img className="card_foto" src={image} />
+        <img className="card_foto" src={process.env.PUBLIC_URL + `/images/${image}`} />
       </div>
       <p className="name">{name}</p>
       <p className="description">{actor}</p>
