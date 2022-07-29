@@ -19,7 +19,7 @@ export function Filters({ name, onSearch, onSearchSelect }) {
 
           <div className="form_school">
             <div>
-              <label htmlFor="school">School</label> <br />
+              <label htmlFor="school">House</label> <br />
             </div>
             <div className="styled-select">
               <select
@@ -27,8 +27,8 @@ export function Filters({ name, onSearch, onSearchSelect }) {
                 name="school"
                 onChange={onSearchSelect}
                 defaultValue="">
-                <option value="" disabled hidden>
-                  Choose school
+                <option value="">
+                  Choose house
                 </option>
                 <option value="Gryffindor">Gryffindor</option>
                 <option value="Slytherin">Slytherin</option>
