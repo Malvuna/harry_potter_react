@@ -1,10 +1,9 @@
 .box {
-  width: 688px;
   border: 1px;
   display: grid;
   grid-template-columns: repeat(2, 334px);
   grid-gap: 20px 20px;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .hr {
@@ -41,4 +40,11 @@
 
 .imgButtom {
   margin-right: 12px;
+}
+
+@media (max-width: 576px) {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+  }
 }

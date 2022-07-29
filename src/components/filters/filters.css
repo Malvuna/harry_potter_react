@@ -1,5 +1,4 @@
 .conteiner {
-  max-width: 688px;
   box-sizing: content-box;
   margin: 0 auto;
 }
@@ -64,4 +63,23 @@
   font-weight: 400;
   line-height: 21px;
   color: #abb5be;
+}
+
+
+@media (max-width: 576px) {
+  .form_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .input {
+    width: 320px;
+  }
+
+  #fname {
+    width: 320px;
+  }
+
 }

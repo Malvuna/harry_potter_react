@@ -36,3 +36,18 @@ line-height: 28px;
 text-decoration-line: underline;
 color: #3F444A;
 }
+
+@media (max-width: 576px) {
+  .conteiner {
+    max-width: 320px;
+}
+
+.h1 {
+  font-size: 52px;
+}
+
+.h2 {
+  font-size: 16px;
+}
+
+}
