@@ -15,7 +15,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Daniel Radcliffe",
     alive: true,
-    image: "https://24api.ru/web/img/hp/harry.jpg",
+    image: "harry.jpg",
   },
   {
     name: "Hermione Granger",
@@ -33,7 +33,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Emma Watson",
     alive: true,
-    image: "https://24api.ru/web/img/hp/hermione.jpeg",
+    image: "hermione.jpeg",
   },
   {
     name: "Ron Weasley",
@@ -51,7 +51,7 @@ export const data = [
     hogwartsStaff: false,
     actor: "Rupert Grint",
     alive: true,
-    image: "https://24api.ru/web/img/hp/ron.jpg",
+    image: "ron.jpg",
   },
   {
     name: "Draco Malfoy",
