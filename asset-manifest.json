@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/harry_potter_react/static/css/main.a8bcd861.css",
-    "main.js": "/harry_potter_react/static/js/main.c99993fb.js",
+    "main.js": "/harry_potter_react/static/js/main.f6e12d83.js",
     "static/media/empty.svg": "/harry_potter_react/static/media/empty.cfb3374a8739fefc1f544bf034a5b662.svg",
     "index.html": "/harry_potter_react/index.html",
     "static/media/likese.svg": "/harry_potter_react/static/media/likese.780ebc7d4c10690fda53cf4761560d8c.svg",
     "main.a8bcd861.css.map": "/harry_potter_react/static/css/main.a8bcd861.css.map",
-    "main.c99993fb.js.map": "/harry_potter_react/static/js/main.c99993fb.js.map"
+    "main.f6e12d83.js.map": "/harry_potter_react/static/js/main.f6e12d83.js.map"
   },
   "entrypoints": [
     "static/css/main.a8bcd861.css",
-    "static/js/main.c99993fb.js"
+    "static/js/main.f6e12d83.js"
   ]
 }
