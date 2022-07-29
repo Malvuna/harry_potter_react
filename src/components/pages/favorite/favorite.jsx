@@ -14,7 +14,7 @@ export function Favorite({ filterSchool, likeName, onLike, onDisLike }) {
       <div className="box">
         {filterFavoritArr.map((elem) => (
           <Card
-            image={process.env.PUBLIC_URL + `/images/${elem.image}`}
+            image={elem.image}
             name={elem.name}
             actor={elem.actor}
             gender={elem.gender}
